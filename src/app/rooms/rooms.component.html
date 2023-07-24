@@ -1,0 +1,13 @@
+<h1>Welcome to the {{hotelName}}</h1>
+<div [hidden]="hiderooms">
+    Number of Rooms:
+    <div [innerText]="numberOfRooms"></div>
+</div>
+
+<div *ngIf="rooms.avalableRooms > 0">
+    Room List
+</div>
+<button (click)="toggle()">Toggle</button>
+
+
+<!-- document.getElementById("numberOfRooms").innerHTML -->
